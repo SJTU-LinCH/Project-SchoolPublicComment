@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SchoolPublicComment</string>
+    <string name="sampleUserName">liv4evr</string>
+    <string name="sampleUserSchool">上海脚痛大学</string>
+    <string name="buttonForMyCourses_Text">我的课程</string>
+    <string name="buttonForMyFavorites_Text">我的收藏</string>
+    <string name="buttonForMyRatings_Text">我的评价</string>
+    <string name="buttonForMySettings_Text">我的设置</string>
+    <string name="buttonForExit">退出应用</string>
+    <string name="title_activity_store_info">storeInfo</string>
+    <string name="txt_name">name</string>
+    <string name="num_score">0</string>
+</resources>
