@@ -19,7 +19,7 @@ urlpatterns = patterns('',
     url(r'^login/', include(login.urls)),
     url(r'^course/', include(course.urls)),
     url(r'^merchant/', include(merchant.urls)),
-    url(r'^entertainmentt/', include(entertainment.urls)),
+    url(r'^entertainment/', include(entertainment.urls)),
     url(r'^api/',include(login.urls)),
 
 )
