@@ -7,6 +7,7 @@ from course.models import Course
 from rest_framework import viewsets,generics,status,permissions
 from course.serializers import CourseSerializer
 from rest_framework.response import Response
+from django.shortcuts import get_object_or_404
 
 
 #这个跟django的类方法可不一样 以前都是self，现在是一个viewsets.ModelViewSet 类方法

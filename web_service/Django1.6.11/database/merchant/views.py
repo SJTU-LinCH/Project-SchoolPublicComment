@@ -7,6 +7,7 @@ from merchant.models import Merchant
 from rest_framework import viewsets,generics,status,permissions
 from merchant.serializers import MerchantSerializer
 from rest_framework.response import Response
+from django.shortcuts import get_object_or_404
 
 
 #这个跟django的类方法可不一样 以前都是self，现在是一个viewsets.ModelViewSet 类方法
@@ -35,4 +36,6 @@ class MerchantList(generics.ListAPIView):
 class MerchantDetail(generics.RetrieveAPIView):
     queryset = Merchant.objects.all()
     serializer_class = MerchantSerializer
+
+
 
