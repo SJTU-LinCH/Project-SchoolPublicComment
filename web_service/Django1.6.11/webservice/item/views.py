@@ -3,6 +3,7 @@ from item.serializers import CourseSerializer,MerchantSerializer,FunSerializer,U
 from rest_framework import generics,permissions
 from django.contrib.auth.models import User
 from item.permissions import IsOwnerOrReadOnly
+from django.contrib.auth import get_user_model
 
 
 class CourseList(generics.ListCreateAPIView):
@@ -42,8 +43,10 @@ class FunDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly,)
 
 
-class UserList(generics.ListAPIView):
-    queryset = User.objects.all()
+class UserList(generics.ListCreateAPIView):
+    model = get_user_model()
+    queryset=User.objects.all()
+    permission_classes = [ permissions.AllowAny ]
     serializer_class = UserSerializer
 
 
