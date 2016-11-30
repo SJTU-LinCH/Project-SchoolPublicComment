@@ -1,8 +1,5 @@
-<head>
-<title>
+
 # Project-SchoolPublicComment
-</title>
-</head>
 <body>
 这是一个SJTU_SoftwareEngineering项目。<br/>
 我们旨在创建一个安卓app实现基本的校内课程、美食点评功能。<br/>
