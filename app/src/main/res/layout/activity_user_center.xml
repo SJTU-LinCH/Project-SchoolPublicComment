@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="godknows.schoolpubliccomment.UserCenter">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/sampleuserheadportrait_32px"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="48dp"
+                android:layout_marginStart="48dp"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:text="@string/sampleUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="37dp"
+                android:id="@+id/userName" />
+
+            <TextView
+                android:text="@string/sampleUserSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="66dp"
+                android:id="@+id/userSchool" />
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:id="@+id/grid">
+
+            <Button
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/buttonForMyRatings_Text"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonForMyRatings"
+                android:drawableTop="@drawable/write_72px"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_blue_bright" />
+
+            <Button
+                android:layout_gravity="right|center"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:text="@string/buttonForMyFavorites_Text"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonForMyFavorites"
+                android:drawableTop="@drawable/star_72px"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_green_light" />
+
+            <Button
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="@string/buttonForMySettings_Text"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonForMySettings"
+                android:drawableTop="@drawable/gear_72px"
+                android:layout_gravity="right|center_vertical|center_horizontal"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="@string/buttonForMyCourses_Text"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonForMyCourses"
+                android:drawableTop="@drawable/schedule_72px"
+                android:layout_gravity="left"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:background="@android:color/holo_orange_dark" />
+        </GridLayout>
+
+        <Button
+            android:text="@string/buttonForExit"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonForExit"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@android:color/holo_red_light"
+            android:layout_weight="2" />
+
+        <RelativeLayout
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
